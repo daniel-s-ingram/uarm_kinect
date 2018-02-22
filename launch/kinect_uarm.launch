@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node name="rviz" pkg="rviz" type="rviz"/>
+	<node name="openni_tracker" pkg="openni_tracker" type="openni_tracker" output="screen"/>
+	<node name="static_tf_publisher" pkg="tf" type="static_transform_publisher"
+		args="0 0 0 0 0 0 1 map openni_depth_frame 450"/>
+</launch>
