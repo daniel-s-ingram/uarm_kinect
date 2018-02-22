@@ -1,1 +1,1 @@
-# kinect-pyuarm
+# uarm_kinect
