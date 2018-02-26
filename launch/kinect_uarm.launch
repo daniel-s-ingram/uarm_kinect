@@ -1,8 +1,14 @@
 <?xml version="1.0"?>
 
 <launch>
-	<node name="rviz" pkg="rviz" type="rviz"/>
-	<node name="openni_tracker" pkg="openni_tracker" type="openni_tracker" output="screen"/>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find kinect_pyuarm)/rviz/kinect.rviz"/>
+	
+	<!--node name="openni_tracker" pkg="openni_tracker" type="openni_tracker" output="screen"/-->
+	
 	<node name="static_tf_publisher" pkg="tf" type="static_transform_publisher"
 		args="0 0 0 0 0 0 1 map openni_depth_frame 450"/>
+
+	<node name="uarm_control" pkg="kinect_pyuarm" type="uarm_control.py" output="screen"/>
+
+	<include file="$(find skeleton_markers)/launch/markers_from_tf.launch"/>
 </launch>
