@@ -24,7 +24,7 @@ sudo ./install.sh
 ```
 
 Installing SensorKinect
-=======================
+-----------------------
 
 ```
 cd ~
@@ -35,8 +35,9 @@ cd Platform/Linux/CreateRedist
 cd ../Redist/Sensor-Bin-Linux-x64-v5.1.2.1/ (same as above)
 sudo ./install.sh
 ```
+
 Installing NITE 1.5.2
-=====================
+---------------------
 
 ```
 cd ~
@@ -46,7 +47,7 @@ sudo ./install.sh
 ```
 
 Installing openni_tracker (ROS package)
-=======================================
+---------------------------------------
 
 ```
 cd ~/your_catkin_ws/src/
