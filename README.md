@@ -10,7 +10,7 @@ sudo apt-get install doxygen graphviz mono-complete
 ```
 
 Installing OpenNI 1.5.4
-=======================
+-----------------------
 
 ```
 cd ~
